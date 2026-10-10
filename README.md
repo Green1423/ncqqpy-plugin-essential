@@ -2,7 +2,7 @@
 
 禁言/踢人/解禁/群信息等群管理命令，以及按群配置的入群欢迎语（含定时撤回）。
 
-这是 [ncqqpy](https://github.com/<you>/ncqqpy) 的插件，**独立仓库**：
+这是 [ncqqpy](https://github.com/Green1423/ncqqpy) 的插件，**独立仓库**：
 框架按 `plugin_dir`（默认 `./plugins`）扫描子目录加载插件，所以把它 clone 到
 框架的 `plugins/` 下即可。
 
@@ -10,12 +10,12 @@
 
 ```bash
 cd /path/to/ncqqpy
-git clone https://github.com/<you>/ncqqpy-plugin-essential plugins/essential
+git clone https://github.com/Green1423/ncqqpy-plugin-essential plugins/essential
 # 重新加载（QQ 内，超级用户 · 仅私聊）
 #   /reload essential
 ```
 
-要求：框架 [ncqqpy](https://github.com/<you>/ncqqpy)（`napcat` 包需可导入）。
+要求：框架 [ncqqpy](https://github.com/Green1423/ncqqpy)（`napcat` 包需可导入）。
 
 ## 配置
 
