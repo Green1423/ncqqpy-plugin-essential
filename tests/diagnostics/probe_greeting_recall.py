@@ -40,7 +40,7 @@ for name in ("main.py", "datapack.py"):
 # ---- 2. 干跑：直接加载线上插件模块，用线上 config.json 算一遍 ----
 sys.path.insert(0, str(root))
 try:
-    from napcat import ConfigManager
+    from napcat.config import ConfigManager
 except Exception as e:  # noqa: BLE001
     print(f"\n无法 import napcat（需在 bot 工作目录跑）: {e}")
     sys.exit(0)

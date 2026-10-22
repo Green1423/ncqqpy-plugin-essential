@@ -46,11 +46,15 @@ if not (PLUGIN_DIR / "__init__.py").exists() and (ROOT / "__init__.py").exists()
     PLUGIN_DIR = PLUGIN_ROOT_DIR / PLUGIN_NAME
 PLUGIN_PKG = f"plugins.{PLUGIN_NAME}"
 
-from napcat import (                                                   # noqa: E402
-    CommandManager, ConfigManager, EventBus, FileManager, GroupIncreaseEvent,
-    GroupBinding, MessageChain, MessageEvent, PermissionManager, PluginManager,
-    TimerManager,
-)
+from napcat.command import CommandManager
+from napcat.config import ConfigManager
+from napcat.events import EventBus, TimerManager
+from napcat.file_manager import FileManager
+from napcat.models import GroupIncreaseEvent, MessageEvent
+from napcat.client import GroupBinding
+from napcat.message import MessageChain
+from napcat.permission import PermissionManager
+from napcat.plugin import PluginManager
 
 TMP = ROOT / "tests" / ".test-tmp" / "essential"
 SUPERUSER = 1

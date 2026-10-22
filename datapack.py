@@ -1,4 +1,4 @@
-from napcat import BoolField, StrField, CommandSchema, QQField, DurationField
+from napcat.command import BoolField, StrField, CommandSchema, QQField, DurationField
 
 
 class GreetingSchema(CommandSchema):

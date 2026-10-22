@@ -21,7 +21,9 @@
 """
 import asyncio
 
-from napcat import PluginBase, MessageChain, GroupIncreaseEvent, MessageEvent
+from napcat.plugin import PluginBase
+from napcat.message import MessageChain
+from napcat.models import GroupIncreaseEvent, MessageEvent
 from .datapack import GreetingSchema, BanSchema, KickSchema, GroupInfoSchema
 
 # 已废弃的布尔开关（老配置/老命令里可能有）：读取时一次性迁移到 greeting_recall_delay
